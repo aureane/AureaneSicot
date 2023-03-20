@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container .grid {
+    padding: 1rem 2rem;
+}
+
+/* Barre de navigation */
+
+@media screen and (min-width:750px) {
+    .navbar {
+        display: flex;
+    }
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.d-flex li a {
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.d-flex li a:hover {
+    background-color: rgb(222, 186, 196);
+}
+
+.name {
+    display: block;
+    padding: 14px 16px;
+    color: rgb(164, 17, 69);
+}
+
+/* */
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(182, 178, 178);
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: rgb(216, 191, 198);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* */
+
+/* */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid__item {
+    flex-grow: 1;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media screen and (min-width:750px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .grid__item {
+        max-width: 50%;
+    }
+}
+
+.section-title {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 749px) {
+    .section-header {
+        text-align: center;
+    }
+}
+
+.header {
+    border-bottom: 1px solid #000;
+    background: rgb(252, 246, 242);
+    color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header .social a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.header li {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.header a {
+    color: #000;
+}
+
+.header .right {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    margin-bottom: 0;
+}
+
+.social a {
+    padding: 0 2px;
+}
+
+.hero {
+    background: #000;
+    color: white;
+    padding: 1rem 0 0 0;
+}
+
+.hero__logo {
+    max-width: 400px;
+    border-radius: 50%;
+
+}
+
+.hero .title {
+    font-size: 2rem;
+    margin: 1.6rem 0 0 0;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.hero__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .grid {
+    justify-content: center;
+}
+
+@media screen and (max-width:749px) {
+    .hero__item.left {
+        order: 2;
+    }
+
+    .hero__item.right {
+        order: 1;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .hero__item {
+        flex: 1 0 50%;
+
+        text-align: left;
+
+        align-items: flex-start;
+    }
+
+    .hero .title {
+        font-size: 4rem;
+    }
+
+    .hero__item.left {
+        align-items: flex-start;
+    }
+
+    .hero__logo img {
+        max-width: 400px;
+        border-radius: 50%;
+    }
+}
+
+
+/* */
+
+.about {
+    padding-top: 0;
+    background-color: rgb(252, 246, 242);
+}
+
+.about .section-title {
+    margin-top: 2.8rem;
+}
+
+@media screen and (min-width:750px) {
+    .about img {
+        padding-right: 3rem;
+    }
+}
+
+.about li {
+    padding: 1.4rem;
+    font-size: 130%;
+}
+
+/* */
+
+/*Projets*/
+
+.projets li {
+    padding: 1rem;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    height: 40rem;
+}
+
+.row {
+    margin-right: 20rem;
+    margin-left: 20rem;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    height: 80%;
+    background-color: #FFF;
+}
+
+/* Experiences */
+
+.timeline h4 {
+    color: rgb(90, 90, 90);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #000;
+    top: 4%;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline_container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+.timeline .left {
+    left: 0;
+}
+
+
+.timeline .right {
+    left: 50%;
+}
+
+.timeline .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent white transparent transparent;
+}
+
+
+.timeline .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline .content {
+    padding: 20px 30px;
+    background-color: rgb(222, 186, 196);
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline::after {
+        left: 31px;
+        top: 2%;
+    }
+
+    .timeline .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .timeline .right {
+        left: 0%;
+    }
+}
+
+/* */
+
+.skills {
+    background-color: #FFF;
+    padding-bottom: 10rem;
+}
+
+
+.skills th {
+    height: 100px;
+    width: 50rem;
+    background-color: rgb(216, 191, 198);
+    font-size: larger;
+}
+
+.skills td {
+    height: 90px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    border-style: groove;
+}
+
+/**/
+
+.contact {
+    text-align: center;
+}
+
+.form {
+    background-color: rgb(241, 240, 240);
+    margin: 4rem auto 0 auto;
+    max-width: 600px;
+}
+
+.form input,
+.form textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea {
+    min-height: 200px;
+}
+
+.form .btn {
+    border: none;
+    background: #000;
+    color: #FFF;
+    width: auto;
+    min-width: 150px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.form .btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+footer .grid {
+    align-items: center;
+}
+
+footer .social {
+    justify-content: center;
+    text-align: center;
+}
+
+footer .social li {
+    padding: 0 .7rem;
+}
+
+footer .social a {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+@media screen and (min-width:750px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .grid__item {
+        max-width: 33.333%;
+    }
+}
