@@ -283,8 +283,6 @@ a {
     font-size: 130%;
 }
 
-/* */
-
 /*Projets*/
 
 .projets li {
@@ -309,13 +307,39 @@ a {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .column {
-        width: 100%;
+        width: 150%;
         display: block;
         margin-bottom: 20px;
+        margin-left: 3rem
+    }
+    
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    height: 40%;
+    background-color: #FFF;
+}
+    
+}
+
+@media screen and (max-width: 680px) {
+    .row {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 12px;
+        text-align: center;
+        max-width: 60%;
+        background-color: #FFF;
     }
 }
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
